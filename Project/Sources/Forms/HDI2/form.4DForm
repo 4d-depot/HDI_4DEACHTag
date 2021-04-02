@@ -1,0 +1,377 @@
+﻿{
+	"destination": "detailScreen",
+	"windowMinWidth": 800,
+	"windowMaxWidth": 32000,
+	"windowMinHeight": 540,
+	"windowMaxHeight": 32000,
+	"width": 1000,
+	"height": 910,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad",
+		"onUnload",
+		"onPageChange"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 20,
+					"left": 20,
+					"width": 960,
+					"height": 870,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				},
+				"TraceCheckbox": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 860,
+					"left": 30,
+					"width": 80,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "btnTrace",
+					"sizingX": "fixed",
+					"sizingY": "fixed"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 80,
+					"left": 70,
+					"width": 800,
+					"height": 250,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions{1}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Static Picture2": {
+					"type": "picture",
+					"top": 350,
+					"left": 130,
+					"width": 699,
+					"height": 531,
+					"picture": "Images/Static Picture2.tif",
+					"pictureFormat": "scaled"
+				}
+			}
+		},
+		{
+			"objects": {
+				"information7": {
+					"type": "input",
+					"top": 100,
+					"left": 70,
+					"width": 900,
+					"height": 40,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions{2}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"WebAreaCustomers": {
+					"type": "webArea",
+					"left": 70,
+					"top": 240,
+					"width": 900,
+					"height": 300,
+					"urlSource": "WA_URL_Customers",
+					"webEngine": "system",
+					"borderStyle": "none"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Run",
+					"top": 180,
+					"left": 400,
+					"width": 90,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button1.4dm",
+					"focusable": false
+				},
+				"URLInfo1": {
+					"type": "input",
+					"left": 280,
+					"top": 180,
+					"width": 100,
+					"height": 20,
+					"dataSource": "Form:C1466.userId"
+				},
+				"Input": {
+					"type": "input",
+					"left": 70,
+					"top": 580,
+					"width": 700,
+					"height": 280,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"dataSource": "_TabLineHTML{1}",
+					"styledText": true
+				},
+				"Text": {
+					"type": "text",
+					"text": "Enter the salesperson's ID:",
+					"top": 180,
+					"left": 60,
+					"width": 200,
+					"height": 20,
+					"textAlign": "right"
+				},
+				"Text1": {
+					"type": "text",
+					"text": "(Try 1, 2, or 3)",
+					"top": 200,
+					"left": 100,
+					"width": 100,
+					"height": 20,
+					"fontStyle": "italic"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "customers.shtml",
+					"top": 560,
+					"left": 70,
+					"width": 200,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold"
+				},
+				"Input3": {
+					"type": "input",
+					"left": 280,
+					"top": 200,
+					"width": 100,
+					"height": 20,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSource": "_TabLineCode{1}",
+					"styledText": true
+				},
+				"Input4": {
+					"type": "input",
+					"left": 510,
+					"top": 180,
+					"width": 450,
+					"height": 20,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSource": "_TabLineCode{2}",
+					"styledText": true
+				}
+			}
+		},
+		{
+			"objects": {
+				"information5": {
+					"type": "input",
+					"top": 100,
+					"left": 70,
+					"width": 900,
+					"height": 100,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions{3}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Web Area2": {
+					"type": "webArea",
+					"left": 70,
+					"top": 239,
+					"width": 900,
+					"height": 250,
+					"urlSource": "WA_URL_SalesPersons",
+					"webEngine": "system",
+					"borderStyle": "none"
+				},
+				"Input1": {
+					"type": "input",
+					"left": 70,
+					"top": 560,
+					"width": 900,
+					"height": 250,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"dataSource": "_TabLineHTML{2}",
+					"styledText": true
+				},
+				"Text3": {
+					"type": "text",
+					"text": "salesPersons.shtml",
+					"top": 540,
+					"left": 70,
+					"width": 200,
+					"height": 20,
+					"textAlign": "left",
+					"fontWeight": "bold"
+				},
+				"Input7": {
+					"type": "input",
+					"left": 70,
+					"top": 490,
+					"width": 450,
+					"height": 20,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"dataSource": "_TabLineCode{4}",
+					"styledText": true
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Open URL",
+					"top": 840,
+					"left": 425,
+					"width": 150,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm",
+					"focusable": false
+				}
+			}
+		},
+		{
+			"objects": {
+				"information1": {
+					"type": "input",
+					"top": 100,
+					"left": 70,
+					"width": 900,
+					"height": 100,
+					"sizingX": "fixed",
+					"sizingY": "fixed",
+					"dataSource": "_Descriptions{4}",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"text": "Run the code",
+					"top": 730,
+					"left": 70,
+					"width": 150,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button3.4dm",
+					"focusable": false
+				},
+				"Input2": {
+					"type": "input",
+					"left": 70,
+					"top": 260,
+					"width": 750,
+					"height": 440,
+					"enterable": false,
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "dotted",
+					"dataSource": "_TabLineCode{3}",
+					"styledText": true
+				},
+				"ShowOnDiskButton": {
+					"type": "button",
+					"text": "Show products.txt on disk",
+					"top": 730,
+					"left": 240,
+					"width": 220,
+					"height": 20,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/ShowOnDiskButton.4dm",
+					"focusable": false
+				}
+			}
+		}
+	],
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 4391,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font: Roboto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 4px;
+}
+
+tr:nth-child(even) {
+  background-color: #cce6ff;
+}
+</style>
+</head>
+
+	<body bgcolor="#ffffff">
+       <center><h3>Salespersons</h3></center>
+	<table class="table">	
+		  <!--#4DCODE
+		    $salesPersons:=JSON Parse(Folder(fk resources folder).file("salesPersons.txt").getText())
+		  -->		  
+		<tr><th>UserId</th><th>First name</th><th>Last name</th></tr>
+    	  <!--#4DEACH $salesPerson in $salesPersons-->
+		<tr>
+		    <td ><!--#4DTEXT $salesPerson.userId--></td>
+	    	<td ><!--#4DTEXT $salesPerson.firstname--></td>
+		   	<td ><!--#4DTEXT $salesPerson.lastname--></td>
+		</tr>
+		  <!--#4DENDEACH-->
+	</table>
+	</body>  
+</html>
+	  
